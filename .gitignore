@@ -1,0 +1,13 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Ignore MonoCustomResourceRegistry
+addons/MonoCustomResourceRegistry/
+
+# Ignore .vscode
+.vscode/
+
+# Ignore Godot files
+icon.svg
+icon.svg.import

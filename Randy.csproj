@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Godot.NET.Sdk/4.3.0">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net7.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'ios' ">net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <RootNamespace>RandyPlugin</RootNamespace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="C5" Version="3.0.0" />
+    <Content Include="addons\Randy\Randy.cs" />
+    <Content Include="addons\Randy\plugin.cfg" />
+    <Content Include="addons\Randy\SelectableItem.cs" />
+    <Content Include="addons\Randy\Selector.cs" />
+    <Content Include="addons\Randy\Generic\Selector.cs" />
+  </ItemGroup>
+</Project>
